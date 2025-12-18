@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 # hkc_visualization_tile_inception
 =======
-# FILE: README.md
-# hkc_visualization_tile
 
 **Spectral Tile Field Engine** for deterministic construction, replay, and
 validation of large tensor fields on GPUs.
