@@ -1,0 +1,29 @@
+[project]
+name = "hkc-visualization-tile-inception"
+version = "0.1.0"
+description = "Replayable spectral tile engine for deterministic reconstruction and validation of large tensor fields."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Cascade Space Systems"}]
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.2",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+hkc-tile = "hkc_visualization_tile_inception.cli.hkc_tile:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

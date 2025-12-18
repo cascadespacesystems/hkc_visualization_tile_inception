@@ -1,0 +1,18 @@
+# FILE: .gitignore
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+dist/
+build/
+*.egg-info/
+
+artifacts/
+benchmarks/results/*.json
+benchmarks/results/*.log
+benchmarks/results/figures/*.png
+
+.DS_Store
