@@ -1,5 +1,5 @@
 
-# hkc_visualization_tile_inception
+## HKC_Visualization_Tile_Inception
 =======
 
 **Spectral Tile Field Engine** for deterministic construction, replay, and
