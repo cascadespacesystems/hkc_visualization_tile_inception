@@ -35,41 +35,31 @@ pip install -e ".[dev]"
 
 Flagship demo: deterministic replay
 1) Build global + export coeffs + manifest
-python -m hkc_visualization_tile.cli.hkc_tile build-global
-
+python3 -m hkc_visualization_tile.cli.hkc_tile build-global
 
 Writes:
 
 artifacts/harmonic_export/global_625x625x256.pt
-
 artifacts/harmonic_export/global_weight_acc.pt
-
 artifacts/harmonic_export/manifest_tiles.json
-
 artifacts/harmonic_export/tile_coeffs/tile_XXXXXX.pt
 
 2) Validate replayability (full proof)
-python -m hkc_visualization_tile.cli.hkc_tile validate-recon
-
+python3 -m hkc_visualization_tile.cli.hkc_tile validate-recon
 
 This rebuilds the global tensor from coeff tiles + manifest only and reports:
 
 MAE / RMSE / max error
-
 coverage fraction
-
 writes benchmarks/results/figures/replay_error_heatmap.png
 
 Benchmarks & validation panel
 
 steps_to_hit.png
-
 wall_clock.png
-
 replay_error_heatmap.png
 
 Generate figures:
-
 bash tools/run_benchmark_figures.sh
 
 ## Two export modes (professional + reviewer-friendly)
