@@ -1,4 +1,3 @@
-# FILE: benchmarks/README.md
 # Benchmarks & Validation
 
 This directory contains reproducible evidence of:
