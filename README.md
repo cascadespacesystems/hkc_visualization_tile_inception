@@ -45,7 +45,7 @@ artifacts/harmonic_export/manifest_tiles.json
 artifacts/harmonic_export/tile_coeffs/tile_XXXXXX.pt
 
 2) Validate replayability (full proof)
-python3 -m hkc_visualization_tile.cli.hkc_tile validate-recon
+python3 -m hkc_visualization_tile_inception.cli.hkc_tile validate-recon
 
 This rebuilds the global tensor from coeff tiles + manifest only and reports:
 
