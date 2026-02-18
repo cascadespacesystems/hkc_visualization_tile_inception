@@ -35,7 +35,7 @@ pip install -e ".[dev]"
 
 Flagship demo: deterministic replay
 1) Build global + export coeffs + manifest
-python3 -m hkc_visualization_tile.cli.hkc_tile build-global
+python3 -m hkc_visualization_tile_inception.cli.hkc_tile build-global
 
 Writes:
 
